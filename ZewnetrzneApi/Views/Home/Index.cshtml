@@ -1,0 +1,10 @@
+﻿@model ZewnetrzneApi.Models.City
+@{ 
+    Layout = null;
+}
+<body>
+    <form asp-controller="City" asp-action="GetWeatherByCity" method="get">
+        <label asp-for="Name">City:</label>
+        <input asp-for="Name"/>
+    </form>
+</body>
